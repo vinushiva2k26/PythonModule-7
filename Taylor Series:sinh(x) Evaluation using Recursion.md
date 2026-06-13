@@ -51,5 +51,3 @@ print(sinh(x, n))
 ## Result
 
 Thus, the Python program was successfully executed to evaluate the value of sinh(x) for n terms using recursion.
-
-## RESULT
