@@ -21,10 +21,35 @@ To write a Python program to evaluate the value of **sinh(x)** for **n terms** u
 
 ---
 
-## 💻 PROGRAM:
+## 💻Program
 
-ADD CODE HERE
+```python
+def fact(n):
+    if n <= 1:
+        return 1
+    return n * fact(n - 1)
 
-## OUTPUT
+def sinh(x, n):
+    if n == 0:
+        return x
+    return (pow(x, 2 * n + 1) / fact(2 * n + 1)) + sinh(x, n - 1)
+
+x = int(input())
+n = int(input())
+
+print(sinh(x, n))
+```
+
+## Output
+
+```text
+2
+3
+3.626984126984127
+```
+
+## Result
+
+Thus, the Python program was successfully executed to evaluate the value of sinh(x) for n terms using recursion.
 
 ## RESULT
