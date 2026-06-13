@@ -14,10 +14,26 @@ To write a Python program to calculate the **sum of all digits** in a number usi
 5. Print the result.
 6. **Stop**
 
-## 💻 PROGRAM:
+## 💻Program
 
-ADD CODE HERE
+```python
+def sum_digit(n):
+    if n <= 0:
+        return 0
+    return n % 10 + sum_digit(n // 10)
 
-## OUTPUT
+n = int(input())
 
-## RESULT
+print(sum_digit(n))
+```
+
+## Output
+
+```text
+1234
+10
+```
+
+## Result
+
+Thus, the Python program was successfully executed to find the sum of digits of a number using recursion.
