@@ -15,10 +15,30 @@ To write a Python program to demonstrate **Head Recursion** by finding and print
 6. Call the recursive function
 7. **Stop**
 
-## 💻 PROGRAM:
+## 💻Program
 
-ADD CODE HERE
+```python
+def fun(n):
+    if n == 0:
+        return
+    fun(n - 1)
+    print(n, end=" ")
 
-## OUTPUT
+n = int(input())
 
-## RESULT
+if n % 2 != 0:
+    n = n + 1
+
+fun(n)
+```
+
+## Output
+
+```text
+5
+1 2 3 4 5 6
+```
+
+## Result
+
+Thus, the Python program was successfully executed to demonstrate Head Recursion by printing the sequence after the recursive call.
